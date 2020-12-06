@@ -1,6 +1,6 @@
 import React from "react";
 
-function HistoryIcon() {
+function HistoryIcon(props) {
   return (
     <svg
       class="icon-revisions"
@@ -8,6 +8,7 @@ function HistoryIcon() {
       width="22"
       height="22"
       viewBox="0 0 22 22"
+      {...props}
     >
       <path d="M8.7,14.7l3.3-3.3V6h-2v4.6l-2.7,2.7L8.7,14.7z M11,2c5,0,9,4,9,9h-2c0-3.9-3.1-7-7-7s-7,3.1-7,7s3.1,7,7,7c2.4,0,4.5-1.2,5.7-3H13v-2h7v7h-2v-3.3c-1.6,2-4.2,3.3-7,3.3c-5,0-9-4-9-9S6,2,11,2z"></path>
     </svg>

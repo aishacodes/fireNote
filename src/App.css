@@ -1,9 +1,26 @@
+.SearchForm {
+  margin: 0 1rem;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SearchForm input {
+  border: none;
+  background-color: #1d2327;
+  padding: 0.2rem;
+  color: white;
+}
+.SearchForm input:focus {
+  outline: none;
+}
 .App {
   background-color: #1d2327;
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 35% 1fr;
+  grid-template-columns: 19.5% 1fr;
 }
 
 .AuthView {
@@ -12,6 +29,6 @@
 button {
   background: #618df2;
 }
-input {
+login input {
   background: #e8f0fe;
 }
