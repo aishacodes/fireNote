@@ -5,3 +5,7 @@
   align-items: center;
   border-bottom: 1px solid #2c3338;
 }
+p {
+  border: 1px solid #2c3338;
+  color: white;
+}

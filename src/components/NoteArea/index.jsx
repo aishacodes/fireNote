@@ -15,6 +15,7 @@ const TopBar = () => {
       <div className="left">
       <ToggleSidebarIcon style= {{width:'24px', fill: '#618df2'}} />
       </div>
+      {/* <p>OFFLINE</p> */}
       <div className="right">
       <HistoryIcon style= {{width:'24px', fill: '#618df2'}} />
       <ShareIcon style= {{width:'24px', fill: '#618df2',  marginLeft: '1.3rem'}} />
@@ -30,7 +31,9 @@ function index() {
   return (
     <div>
       <TopBar />
-      
+      <div>
+
+      </div>
     </div>
   )
 }

@@ -25,10 +25,42 @@
 
 .AuthView {
   background-color: #1d2327;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  color: white;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 button {
+  border: none;
+  outline: none;
+  width: 21rem;
+  height: 2rem;
   background: #618df2;
+  border-radius: 2px;
 }
-login input {
-  background: #e8f0fe;
+.AuthView form input {
+  background-color: #1d2327;
+  width: 20rem;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: 0.5px solid white;
+  font-size: 1rem;
+  color: white;
+  border-radius: 2px;
+}
+
+span.signup,
+span.login {
+  cursor: pointer;
+  color: #618df2;
 }

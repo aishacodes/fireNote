@@ -2,13 +2,7 @@ import React from "react";
 
 function LoginIcon() {
   return (
-    <svg
-      class="logo"
-      width="96"
-      height="96"
-      style="min-height: 96px; min-width: 96px;"
-      viewBox="0 0 176 176"
-    >
+    <svg class="logo" width="96" height="96" viewBox="0 0 176 176">
       <g fillrule="evenodd" cliprule="evenodd">
         <circle cx="88" cy="88" r="88" fill="transparent"></circle>
         <path
