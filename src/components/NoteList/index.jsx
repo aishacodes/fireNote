@@ -1,42 +1,44 @@
-import React from 'react'
+import React from "react";
 
-import './NoteList.css'
+import "./NoteList.css";
 
-import MenuIcon from '../icons/MenuIcon'
-import NewNoteIcon from '../icons/NewNoteIcon'
+import MenuIcon from "../icons/MenuIcon";
+import NewNoteIcon from "../icons/NewNoteIcon";
 
 const SerachForm = () => {
-
-  return(
+  return (
     <div className="SearchForm">
       <form>
-          <input type="text" placeholder="All Notes"/>
+        <input type="text" placeholder="All Notes" />
       </form>
     </div>
-  )
-}
+  );
+};
 
-const Menu = () => {
-
-  return(
-    <div className="Menu" >
-      <MenuIcon  style= {{width:'24px', fill: '#618df2'}} />
+const Menu = ({ addNote }) => {
+  return (
+    <div className="Menu">
+      <MenuIcon style={{ width: "24px", fill: "#618df2" }} />
       <SerachForm />
-      <NewNoteIcon  style= {{width:'24px', fill: '#618df2'}}/>
+      <NewNoteIcon
+        style={{ width: "24px", fill: "#618df2", cursor: "pointer" }}
+        onClick={addNote}
+      />
     </div>
-  )
-}
+  );
+};
 
-
-function index() {
+function index({ addNote, Content }) {
   return (
     <div className="NoteList">
-      <Menu />
-      <div>
-
+      <Menu addNote={addNote} />
+      <div className="notes">
+        <div className="note">
+          <span className="note-content">{Content}</span>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default index
+export default index;

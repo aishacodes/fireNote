@@ -9,3 +9,11 @@ p {
   border: 1px solid #2c3338;
   color: white;
 }
+p.cont {
+  width: 80%;
+  margin: 5rem auto;
+  border: none;
+}
+p.cont:focus {
+  outline: none;
+}
